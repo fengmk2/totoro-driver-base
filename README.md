@@ -5,8 +5,6 @@ totoro-driver-base
 
 [![NPM](https://nodei.co/npm/totoro-driver-base.png?downloads=true&stars=true)](https://nodei.co/npm/totoro-driver-base/)
 
-![logo](https://raw.github.com/node-modules/totoro-driver-base/master/logo.png)
-
 totoro driver base class. [How to write a driver](https://github.com/totorojs/totoro-server#how-to-write-a-driver)
 
 ## Install
