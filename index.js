@@ -83,8 +83,11 @@ proto.onRemove = function (data) {
   throw new Error('Child class must impl this method');
 };
 
+proto.cleanup = function () {
+  throw new Error('Child class must impl this method');
+};
+
 proto.onDisconnect = function () {
-  debug('socket disconnect');
-  process.exit(0);
-  // child class can override this for handle server reconnect
+  debug('socket disconnect, cleanup()');
+  this.cleanup();
 };
