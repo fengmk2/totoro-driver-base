@@ -1,10 +1,6 @@
 totoro-driver-base
 =======
 
-[![Build Status](https://secure.travis-ci.org/node-modules/totoro-driver-base.png)](http://travis-ci.org/node-modules/totoro-driver-base)
-
-[![NPM](https://nodei.co/npm/totoro-driver-base.png?downloads=true&stars=true)](https://nodei.co/npm/totoro-driver-base/)
-
 totoro driver base class. [How to write a driver](https://github.com/totorojs/totoro-server#how-to-write-a-driver)
 
 ## Install
@@ -15,8 +11,7 @@ $ npm install -s totoro-driver-base
 
 ## Usage
 
-* [totoro-phantomjs](https://github.com/fengmk2/totoro-phantomjs)
-* [totoro-nodejs](https://github.com/fengmk2/totoro-nodejs)
+* [totoro-phantomjs](https://github.com/totorojs/totoro-phantomjs)
 
 ## License
 

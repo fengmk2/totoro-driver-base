@@ -6,14 +6,9 @@
   "scripts": {
     "test": "make test-all"
   },
-  "config": {
-    "cov": {
-      "threshold": 100
-    }
-  },
   "dependencies": {
-    "debug": "~1.0.2",
-    "socket.io-client": "0.9.x"
+    "debug": "~2.1.0",
+    "socket.io-client": "~1.2.0"
   },
   "devDependencies": {
     "autod": "*",
@@ -22,16 +17,16 @@
     "istanbul-harmony": "*",
     "jshint": "*",
     "mocha": "*",
-    "should": "~4.0.4"
+    "should": "~4.1.0"
   },
-  "homepage": "https://github.com/fengmk2/totoro-driver-base",
+  "homepage": "https://github.com/totorojs/totoro-driver-base",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fengmk2/totoro-driver-base.git",
-    "web": "https://github.com/fengmk2/totoro-driver-base"
+    "url": "git://github.com/totorojs/totoro-driver-base.git",
+    "web": "https://github.com/totorojs/totoro-driver-base"
   },
   "bugs": {
-    "url": "https://github.com/fengmk2/totoro-driver-base/issues",
+    "url": "https://github.com/totorojs/totoro-driver-base/issues",
     "email": "fengmk2@gmail.com"
   },
   "keywords": [

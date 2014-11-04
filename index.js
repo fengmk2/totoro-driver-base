@@ -22,6 +22,10 @@ module.exports = TotoroDriver;
 
 function TotoroDriver(options) {
   this._server = options.server;
+  if (this._server.indexOf('http') !== 0) {
+    this._server = 'http://' + this._server;
+  }
+  this._server = this._server.replace(/(\/+)$/, '');
 }
 
 var DEVICES = TotoroDriver.DEVICES = {
@@ -39,8 +43,9 @@ var OSNAMES = TotoroDriver.OSNAMES = {
 var proto = TotoroDriver.prototype;
 
 proto.init = function () {
-  debug('connecting to %s', this._server);
-  this.socket = SocketClient.connect(this._server + '/__labor');
+  var laborURL = this._server + '/__labor';
+  debug('connecting to %s', laborURL);
+  this.socket = SocketClient.connect(laborURL);
   this.socket.on('connect', function () {
     var ua = this._getUserAgent();
     debug('connect totoro server with User-Agent: %j', ua);
