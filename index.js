@@ -42,7 +42,7 @@ var OSNAMES = TotoroDriver.OSNAMES = {
 
 var proto = TotoroDriver.prototype;
 
-proto.init = function () {
+proto.init = function (callback) {
   var laborURL = this._server + '/__labor';
   debug('connecting to %s', laborURL);
   this.socket = SocketClient.connect(laborURL);
@@ -50,6 +50,9 @@ proto.init = function () {
     var ua = this._getUserAgent();
     debug('connect totoro server with User-Agent: %j', ua);
     this.socket.emit('init', ua);
+    if (callback) {
+      callback();
+    }
   }.bind(this));
 
   this.socket.on('add', this.onAdd.bind(this));
