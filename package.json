@@ -1,6 +1,6 @@
 {
   "name": "totoro-driver-base",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "totoro driver base class",
   "main": "index.js",
   "scripts": {
